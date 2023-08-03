@@ -75,33 +75,43 @@ include_once 'layouts/nav.php';
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="titulo" class="form-label">Nombre del paciente</label>
+                                        <label for="titulo" class="form-label">Cédula del paciente</label>
+                                        <input type="text" class="form-control" name="titulo" id="cedula"
+                                            aria-describedby="helpId" placeholder="Título">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="titulo" class="form-label">Nombres del paciente</label>
                                         <input type="text" class="form-control" name="titulo" id="titulo"
                                             aria-describedby="helpId" placeholder="Título">
-
                                     </div>
+
+                                    <div class="mb-3">
+                                        <label for="titulo" class="form-label">Apellidos del paciente</label>
+                                        <input type="text" class="form-control" name="titulo" id="titulo"
+                                            aria-describedby="helpId" placeholder="Título">
+                                    </div>
+
                                     <div class="mb-3 visually-hidden">
-                                        <label for="" class="form-label">Fecha:</label>
+                                        <label for="" class="form-label">Fecha</label>
                                         <input type="text" class="form-control" name="fecha" id="fecha"
                                             aria-describedby="helpId" placeholder="Fecha:">
-
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="hora" class="form-label">Hora del evento:</label>
+                                        <label for="hora" class="form-label">Hora del evento</label>
                                         <input type="time" class="form-control" name="hora" id="hora"
                                             aria-describedby="helpId" placeholder="Hora:">
-
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="descripcion" class="form-label">Tratamiento a seguir:</label>
+                                        <label for="descripcion" class="form-label">Tratamiento a seguir</label>
                                         <textarea class="form-control" name="descripcion" id="descripcion"
                                             rows="3"></textarea>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="color" class="form-label">Color:</label>
+                                        <label for="color" class="form-label">Color</label>
                                         <input type="color" class="form-control" name="color" id="color"
                                             aria-describedby="helpId" placeholder="Color:">
                                     </div>
