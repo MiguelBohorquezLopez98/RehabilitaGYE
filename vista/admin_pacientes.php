@@ -65,6 +65,16 @@ include_once 'layouts/nav.php';
                             <input id="telefono" type="text" class="form-control" placeholder="Ingrese teléfono"
                                 required>
                         </div>
+                        <div class="form-group">
+                            <label for="contactoemergencia">Contacto de Emergencia</label>
+                            <input id="contactoemergencia" type="text" class="form-control"
+                                placeholder="Ingrese contacto de emergencia">
+                        </div>
+                        <div class="form-group">
+                            <label for="medicoreferido">Médico de referencia</label>
+                            <input id="medicoreferido" type="text" class="form-control"
+                                placeholder="Ingrese médico de referencia">
+                        </div>
                 </div>
                 <div class="card-footer">
                     <button type="submit" class="btn bg-gradient-primary float-right m-1">Guardar</button>
@@ -112,7 +122,8 @@ include_once 'layouts/nav.php';
 
                         <div class="form-group">
                             <label for="sexo">Sexo</label>
-                            <input id="editar_sexo_paciente" type="text" class="form-control" placeholder="Ingrese sexo">
+                            <input id="editar_sexo_paciente" type="text" class="form-control"
+                                placeholder="Ingrese sexo">
                         </div>
                         <div class="form-group">
                             <label for="direccion">Dirección</label>
@@ -128,6 +139,16 @@ include_once 'layouts/nav.php';
                             <label for="telefono">Teléfono</label>
                             <input id="editar_telefono_paciente" type="text" class="form-control"
                                 placeholder="Ingrese teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactoemergencia">Contacto de Emergencia</label>
+                            <input id="editar_contactoemergencia" type="text" class="form-control"
+                                placeholder="Ingrese contacto de emergencia">
+                        </div>
+                        <div class="form-group">
+                            <label for="medicoreferido">Médico de referencia</label>
+                            <input id="editar_medicoreferido" type="text" class="form-control"
+                                placeholder="Ingrese médico de referencia">
                         </div>
                 </div>
                 <div class="card-footer">

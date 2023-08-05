@@ -111,7 +111,7 @@ if ($_SESSION['id_rol_usuario']==3){
                     </div>
 
                     <!-- Button trigger modal -->
-                    
+
                     <!-- Modal -->
                     <div class="modal fade" id="modalEvento" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
                         aria-hidden="true">
@@ -137,25 +137,26 @@ if ($_SESSION['id_rol_usuario']==3){
                                             <div class="mb-3">
                                                 <label for="titulo" class="form-label">Nombre del paciente</label>
                                                 <input type="text" class="form-control" name="titulo" id="titulo"
-                                                    aria-describedby="helpId" placeholder="Título">
+                                                    aria-describedby="helpId" placeholder="Título" disabled>
 
                                             </div>
                                             <div class="mb-3 visually-hidden">
                                                 <label for="" class="form-label">Fecha:</label>
                                                 <input type="text" class="form-control" name="fecha" id="fecha"
-                                                    aria-describedby="helpId" placeholder="Fecha:">
+                                                    aria-describedby="helpId" placeholder="Fecha:" disabled>
 
                                             </div>
 
                                             <div class="mb-3">
                                                 <label for="hora" class="form-label">Hora del evento:</label>
                                                 <input type="time" class="form-control" name="hora" id="hora"
-                                                    aria-describedby="helpId" placeholder="Hora:">
+                                                    aria-describedby="helpId" placeholder="Hora:" disabled>
 
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="descripcion" class="form-label">Tratamiento a seguir:</label>
+                                                <label for="descripcion" class="form-label">Tratamiento a
+                                                    seguir:</label>
                                                 <textarea class="form-control" name="descripcion" id="descripcion"
                                                     rows="3"></textarea>
                                             </div>
@@ -174,6 +175,10 @@ if ($_SESSION['id_rol_usuario']==3){
                                         data-bs-dismiss="modal">Borrar</button>
                                     <button type="button" onclick="agregarEvento()" id="btnGuardar"
                                         class="btn btn-primary">Guardar</button>
+                                    <button type="button" onclick="" id="btnInicio" class="btn btn-primary">Iniciar
+                                        Terapia</button>
+                                    <button type="button" onclick="" id="btnFin" class="btn btn-primary">Finalizar
+                                        Terapia</button>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +239,7 @@ if ($_SESSION['id_rol_usuario']==3){
             headerToolbar: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
             },
             dateClick: function(informacion) {
 

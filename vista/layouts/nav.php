@@ -96,13 +96,13 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="fas fa-hand-holding-medical"></i>
-                                <p>Gestión Terapia Magnética</p>
+                                <p>Gestión Terapia Diamagnética</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="fas fa-file-medical"></i>
-                                <p>Gestión Tipos Terapia Magnética</p>
+                                <p>Gestión Tipos Terapia Diamagnética</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -118,6 +118,14 @@
                                 <i class="nav-icon far fa-calendar-alt"></i>
                                 <p>
                                     Agendamiento Sesiones
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="admin_agenda_consulta.php" class="nav-link">
+                                <i class="nav-icon far fa-calendar-alt"></i>
+                                <p>
+                                    Agendamiento Terapia Diamagnética
                                 </p>
                             </a>
                         </li>
