@@ -75,36 +75,53 @@ include_once 'layouts/nav.php';
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="titulo" class="form-label">Nombre del paciente</label>
+                                        <label for="titulo" class="form-label">Cédula del paciente</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="titulo" id="cedula"
+                                                aria-describedby="helpId" placeholder="Ingrese cédula del paciente">
+                                            <button type="button" onclick="" id="btnCargar"
+                                                class="btn btn-primary">Cargar
+                                                datos</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="titulo" class="form-label">Nombres del paciente</label>
                                         <input type="text" class="form-control" name="titulo" id="titulo"
-                                            aria-describedby="helpId" placeholder="Título">
-
+                                            aria-describedby="helpId" placeholder="" disabled>
                                     </div>
+
+                                    <div class="mb-3">
+                                        <label for="titulo" class="form-label">Apellidos del paciente</label>
+                                        <input type="text" class="form-control" name="titulo" id="titulo"
+                                            aria-describedby="helpId" placeholder="" disabled>
+                                    </div>
+
                                     <div class="mb-3 visually-hidden">
-                                        <label for="" class="form-label">Fecha:</label>
+                                        <label for="" class="form-label">Fecha</label>
                                         <input type="text" class="form-control" name="fecha" id="fecha"
-                                            aria-describedby="helpId" placeholder="Fecha:">
+                                            aria-describedby="helpId" placeholder="Seleccione fecha">
 
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="hora" class="form-label">Hora del evento:</label>
+                                        <label for="hora" class="form-label">Hora del evento</label>
                                         <input type="time" class="form-control" name="hora" id="hora"
-                                            aria-describedby="helpId" placeholder="Hora:">
+                                            aria-describedby="helpId" placeholder="Seleccione hora">
 
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="descripcion" class="form-label">Tratamiento a seguir:</label>
+                                        <label for="descripcion" class="form-label">Tratamiento a seguir</label>
                                         <textarea class="form-control" name="descripcion" id="descripcion"
-                                            rows="3"></textarea>
+                                            rows="3" disabled></textarea>
                                     </div>
 
-                                    <div class="mb-3">
-                                        <label for="color" class="form-label">Color:</label>
+                                    <!-- <div class="mb-3">
+                                        <label for="color" class="form-label">Color</label>
                                         <input type="color" class="form-control" name="color" id="color"
-                                            aria-describedby="helpId" placeholder="Color:">
-                                    </div>
+                                            aria-describedby="helpId" placeholder="Color">
+                                    </div> -->
 
                                 </form>
                             </div>
