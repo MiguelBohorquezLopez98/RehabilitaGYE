@@ -124,8 +124,8 @@ include_once 'layouts/nav.php';
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <!-- <button type="button" onclick="borrarEvento()" class="btn btn-danger" id="btnBorrar"
-                                data-bs-dismiss="modal">Borrar</button> -->
+                            <button type="button" onclick="borrarEvento()" class="btn btn-danger" id="btnBorrar"
+                                data-bs-dismiss="modal">Eliminar</button>
                             <button type="button" onclick="agregarEvento()" id="btnGuardar"
                                 class="btn btn-primary">Guardar</button>
                         </div>

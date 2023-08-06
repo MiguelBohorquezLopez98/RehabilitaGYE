@@ -24,6 +24,14 @@ if ($_SESSION['id_rol_usuario']==2){
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales-all.js"></script>
+
+
+    <!-- Include the default stylesheet -->
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.css"> -->
+    <!-- Include plugin -->
+    <!-- <script src="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.js"></script> -->
+
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -111,7 +119,7 @@ if ($_SESSION['id_rol_usuario']==2){
                     </div>
 
                     <!-- Button trigger modal -->
-                    
+
                     <!-- Modal -->
                     <div class="modal fade" id="modalEvento" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
                         aria-hidden="true">
@@ -135,43 +143,78 @@ if ($_SESSION['id_rol_usuario']==2){
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="titulo" class="form-label">Nombre del paciente</label>
+                                                <label for="" class="form-label">Cédula del paciente</label>
+                                                <input type="text" class="form-control" name="" id=""
+                                                    aria-describedby="helpId" placeholder="" disabled>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="titulo" class="form-label">Nombres del paciente</label>
                                                 <input type="text" class="form-control" name="titulo" id="titulo"
-                                                    aria-describedby="helpId" placeholder="Título">
-
+                                                    aria-describedby="helpId" placeholder="" disabled>
                                             </div>
+
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Apellidos del paciente</label>
+                                                <input type="text" class="form-control" name="" id=""
+                                                    aria-describedby="helpId" placeholder="" disabled>
+                                            </div>
+
                                             <div class="mb-3 visually-hidden">
-                                                <label for="" class="form-label">Fecha:</label>
+                                                <label for="" class="form-label">Fecha</label>
                                                 <input type="text" class="form-control" name="fecha" id="fecha"
-                                                    aria-describedby="helpId" placeholder="Fecha:">
+                                                    aria-describedby="helpId" placeholder="Fecha" disabled>
 
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="hora" class="form-label">Hora del evento:</label>
+                                                <label for="hora" class="form-label">Hora del evento</label>
                                                 <input type="time" class="form-control" name="hora" id="hora"
-                                                    aria-describedby="helpId" placeholder="Hora:">
+                                                    aria-describedby="helpId" placeholder="Hora" disabled>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="descripcion" class="form-label">Tratamiento a seguir</label>
+                                                <select id="ms" multiple="multiple" class="form-control">
+                                                    <option value="1">January</option>
+                                                    <option value="2">February</option>
+                                                    <option value="3">March</option>
+                                                    <option value="4">April</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">June</option>
+                                                    <option value="7">July</option>
+                                                    <option value="8">August</option>
+                                                    <option value="9">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                </select>
+                                                <!-- <textarea class="form-control" name="descripcion" id="descripcion"
+                                                    rows="3"></textarea> -->
 
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="descripcion" class="form-label">Tratamiento a seguir:</label>
+                                                <label for="descripcion" class="form-label">Observaciones del tratamiento</label>
                                                 <textarea class="form-control" name="descripcion" id="descripcion"
                                                     rows="3"></textarea>
                                             </div>
 
-                                            <div class="mb-3">
+
+
+
+                                            <!-- <div class="mb-3">
                                                 <label for="color" class="form-label">Color:</label>
                                                 <input type="color" class="form-control" name="color" id="color"
                                                     aria-describedby="helpId" placeholder="Color:">
-                                            </div>
+                                            </div> -->
 
                                         </form>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" onclick="borrarEvento()" class="btn btn-danger" id="btnBorrar"
-                                        data-bs-dismiss="modal">Borrar</button>
+                                    <!-- <button type="button" onclick="borrarEvento()" class="btn btn-danger" id="btnBorrar"
+                                        data-bs-dismiss="modal">Borrar</button> -->
                                     <button type="button" onclick="agregarEvento()" id="btnGuardar"
                                         class="btn btn-primary">Guardar</button>
                                 </div>
@@ -209,7 +252,6 @@ if ($_SESSION['id_rol_usuario']==2){
     <!-- jQuery UI -->
     <script src="../js/jquery-ui.min.js"></script>
     <!-- fullCalendar 2.2.5 -->
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
@@ -267,7 +309,7 @@ if ($_SESSION['id_rol_usuario']==2){
         document.getElementById('descripcion').value = evento.extendedProps.descripcion;
         document.getElementById('color').value = evento.backgroundColor;
 
-        document.getElementById('btnBorrar').removeAttribute('disabled', "");
+        //document.getElementById('btnBorrar').removeAttribute('disabled', "");
         document.getElementById('btnGuardar').removeAttribute('disabled', "");
 
 
@@ -326,13 +368,28 @@ if ($_SESSION['id_rol_usuario']==2){
         document.getElementById('descripcion').value = "";
         document.getElementById('color').value = "";
         document.getElementById('id').value = "";
-        document.getElementById('btnBorrar').setAttribute('disabled', "disabled");
+        //document.getElementById('btnBorrar').setAttribute('disabled', "disabled");
     }
 
     function limpiarErrores() {
         document.getElementById('titulo').classList.remove('is-invalid');
     }
     </script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script> -->
+
+
+    <!-- <script>
+    $(function() {
+        $('#ms').change(function() {
+            console.log($(this).val());
+        }).multipleSelect({
+            width: '100%'
+        });
+    });
+    </script> -->
 
 </body>
 
