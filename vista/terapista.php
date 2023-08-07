@@ -135,50 +135,103 @@ if ($_SESSION['id_rol_usuario']==3){
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="titulo" class="form-label">Nombre del paciente</label>
+                                                <label for="titulo" class="form-label">Nombres del paciente</label>
                                                 <input type="text" class="form-control" name="titulo" id="titulo"
                                                     aria-describedby="helpId" placeholder="Título" disabled>
-
-                                            </div>
-                                            <div class="mb-3 visually-hidden">
-                                                <label for="" class="form-label">Fecha:</label>
-                                                <input type="text" class="form-control" name="fecha" id="fecha"
-                                                    aria-describedby="helpId" placeholder="Fecha:" disabled>
-
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="hora" class="form-label">Hora del evento:</label>
+                                                <label for="apellidos" class="form-label">Apellidos del paciente</label>
+                                                <input type="text" class="form-control" name="apellidos" id="apellidos"
+                                                    aria-describedby="helpId" placeholder="Título" disabled>
+                                            </div>
+
+                                            <div class="mb-3 visually-hidden">
+                                                <label for="" class="form-label">Fecha</label>
+                                                <input type="text" class="form-control" name="fecha" id="fecha"
+                                                    aria-describedby="helpId" placeholder="Fecha:" disabled>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="hora" class="form-label">Hora</label>
                                                 <input type="time" class="form-control" name="hora" id="hora"
                                                     aria-describedby="helpId" placeholder="Hora:" disabled>
+                                            </div>
 
+                                            <div class="mb-3">
+                                                <label for="observaciones" class="form-label">Observaciones de la
+                                                    doctora</label>
+                                                <textarea class="form-control" name="observaciones" id="observaciones"
+                                                    rows="3" disabled></textarea>
                                             </div>
 
                                             <div class="mb-3">
                                                 <label for="descripcion" class="form-label">Tratamiento a
-                                                    seguir:</label>
-                                                <textarea class="form-control" name="descripcion" id="descripcion"
-                                                    rows="3"></textarea>
+                                                    seguir:
+                                                    <br>
+                                                    <label for="opcion1">
+                                                        <input type="checkbox" name="tratamientos" id="opcion1"
+                                                            aria-describedby="helpId" placeholder="" disabled>
+                                                        Brazos
+                                                        <div class="input-group mb-3">
+                                                            <input type="time" class="form-control" name="inicioterapia"
+                                                                id="inicioterapia" aria-describedby="helpId"
+                                                                placeholder="" disabled>
+                                                            <button type="button" onclick="" id="btnIniciar"
+                                                                class="btn btn-success btn-sm">Iniciar Terapia</button>
+                                                            <input type="time" class="form-control" name="finterapia"
+                                                                id="finterapia" aria-describedby="helpId" placeholder=""
+                                                                disabled>
+                                                            <button type="button" onclick="" id="btnFin"
+                                                                class="btn btn-danger btn-sm">Finalizar
+                                                                Terapia</button>
+                                                        </div>
+                                                    </label>
+                                                    <br>
+                                                    <label for="opcion2">
+                                                        <input type="checkbox" name="tratamientos" id="opcion2"
+                                                            aria-describedby="helpId" placeholder="" disabled>
+                                                        Piernas
+                                                        <div class="input-group mb-3">
+                                                            <input type="time" class="form-control" name="inicioterapia"
+                                                                id="inicioterapia" aria-describedby="helpId"
+                                                                placeholder="" disabled>
+                                                            <button type="button" onclick="" id="btnIniciar"
+                                                                class="btn btn-success btn-sm">Iniciar Terapia</button>
+                                                            <input type="time" class="form-control" name="finterapia"
+                                                                id="finterapia" aria-describedby="helpId" placeholder=""
+                                                                disabled>
+                                                            <button type="button" onclick="" id="btnFin"
+                                                                class="btn btn-danger btn-sm">Finalizar
+                                                                Terapia</button>
+                                                        </div>
+                                                    </label>
+                                                </label>
+
+                                                <!-- <textarea class="form-control" name="descripcion" id="descripcion"
+                                                    rows="3"></textarea> -->
                                             </div>
 
                                             <div class="mb-3">
+                                                <label for="observaciones" class="form-label">Observaciones</label>
+                                                <textarea class="form-control" name="observaciones" id="observaciones"
+                                                    rows="3"></textarea>
+                                            </div>
+
+                                            <!-- <div class="mb-3">
                                                 <label for="color" class="form-label">Color:</label>
                                                 <input type="color" class="form-control" name="color" id="color"
                                                     aria-describedby="helpId" placeholder="Color:">
-                                            </div>
+                                            </div> -->
 
                                         </form>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" onclick="borrarEvento()" class="btn btn-danger" id="btnBorrar"
-                                        data-bs-dismiss="modal">Borrar</button>
+                                    <!-- <button type="button" onclick="borrarEvento()" class="btn btn-danger" id="btnBorrar"
+                                        data-bs-dismiss="modal">Borrar</button> -->
                                     <button type="button" onclick="agregarEvento()" id="btnGuardar"
                                         class="btn btn-primary">Guardar</button>
-                                    <button type="button" onclick="" id="btnInicio" class="btn btn-primary">Iniciar
-                                        Terapia</button>
-                                    <button type="button" onclick="" id="btnFin" class="btn btn-primary">Finalizar
-                                        Terapia</button>
                                 </div>
                             </div>
                         </div>

@@ -176,18 +176,10 @@ if ($_SESSION['id_rol_usuario']==2){
                                             <div class="mb-3">
                                                 <label for="descripcion" class="form-label">Tratamiento a seguir</label>
                                                 <select id="ms" multiple="multiple" class="form-control">
-                                                    <option value="1">January</option>
-                                                    <option value="2">February</option>
-                                                    <option value="3">March</option>
-                                                    <option value="4">April</option>
-                                                    <option value="5">May</option>
-                                                    <option value="6">June</option>
-                                                    <option value="7">July</option>
-                                                    <option value="8">August</option>
-                                                    <option value="9">September</option>
-                                                    <option value="10">October</option>
-                                                    <option value="11">November</option>
-                                                    <option value="12">December</option>
+                                                    <option value="1">Brazos</option>
+                                                    <option value="2">Piernas</option>
+                                                    <option value="3">Piscina</option>
+                                                    <option value="4">Compresas Calientes</option>
                                                 </select>
                                                 <!-- <textarea class="form-control" name="descripcion" id="descripcion"
                                                     rows="3"></textarea> -->
@@ -195,7 +187,8 @@ if ($_SESSION['id_rol_usuario']==2){
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="descripcion" class="form-label">Observaciones del tratamiento</label>
+                                                <label for="descripcion" class="form-label">Observaciones del
+                                                    tratamiento</label>
                                                 <textarea class="form-control" name="descripcion" id="descripcion"
                                                     rows="3"></textarea>
                                             </div>
@@ -276,7 +269,7 @@ if ($_SESSION['id_rol_usuario']==2){
             headerToolbar: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
             },
             dateClick: function(informacion) {
 
@@ -381,15 +374,13 @@ if ($_SESSION['id_rol_usuario']==2){
     </script> -->
 
 
-    <!-- <script>
+    <script>
     $(function() {
         $('#ms').change(function() {
             console.log($(this).val());
-        }).multipleSelect({
-            width: '100%'
         });
     });
-    </script> -->
+    </script>
 
 </body>
 
