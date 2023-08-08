@@ -191,6 +191,84 @@ if ($_SESSION['id_rol_usuario']==2){
                                             rows="3"></textarea>
                                     </div>
                                 </div>
+                                <div class="form-group row">
+                                    <label for="enfermedades" class="col-sm-2 col-form-label">Enfermedades: </label>
+                                    <fieldset class="p-2">
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="hipertension"
+                                                value="hipertension">
+                                            <label class="form-check-label" for="hipertension">Hipertensión</label>
+                                        </div>
+
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="cardiaco"
+                                                value="cardiaco">
+                                            <label class="form-check-label" for="cardiaco">Cardiáco</label>
+                                        </div>
+
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="diabetes"
+                                                value="diabetes">
+                                            <label class="form-check-label" for="diabetes">Diabetes</label>
+                                        </div>
+
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="tiroides"
+                                                value="tiroides">
+                                            <label class="form-check-label" for="tiroides">Tiroides</label>
+                                        </div>
+
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="gastritis"
+                                                value="gastritis">
+                                            <label class="form-check-label" for="gastritis">Gastritis</label>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <div class="p-4">
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset class="p-2">
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="colitis"
+                                                value="colitis">
+                                            <label class="form-check-label" for="colitis">Colitis</label>
+                                        </div>
+
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="vih" value="vih">
+                                            <label class="form-check-label" for="vih">VIH</label>
+                                        </div>
+
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="fibromialgia"
+                                                value="fibromialgia">
+                                            <label class="form-check-label" for="fibromialgia">Fibromialgia</label>
+                                        </div>
+
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="cancer" value="cancer">
+                                            <label class="form-check-label" for="cancer">Cáncer</label>
+                                        </div>
+
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="enfreumaticas"
+                                                value="enfreumaticas">
+                                            <label class="form-check-label" for="enfreumaticas">Enf. Reumáticas</label>
+                                        </div>
+                                    </fieldset>
+
+                                    <div class="form-group row">
+                                        <label for="otrasenf" class="col-sm-3 col-form-label">Otras:</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" name="otrasenf" id="otrasenf"
+                                                rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </form>
                         </div>
                     </div>
