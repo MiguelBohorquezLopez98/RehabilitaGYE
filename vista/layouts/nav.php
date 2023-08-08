@@ -122,7 +122,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="admin_agenda_consulta.php" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon far fa-calendar-alt"></i>
                                 <p>
                                     Agendamiento Terapia Diamagnética

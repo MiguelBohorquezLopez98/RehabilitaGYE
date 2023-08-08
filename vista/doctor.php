@@ -83,6 +83,25 @@ if ($_SESSION['id_rol_usuario']==2){
                     </div>
                 </div>
 
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-header">DOCTOR</li>
+                        <li class="nav-item">
+                            <a href="consulta.php" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>Consulta</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user-friends"></i>
+                                <p>Historia Clínica</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
@@ -100,7 +119,7 @@ if ($_SESSION['id_rol_usuario']==2){
 
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item active">Doctor/a</li>
+                                <li class="breadcrumb-item active">Home</li>
                             </ol>
                         </div>
                     </div>

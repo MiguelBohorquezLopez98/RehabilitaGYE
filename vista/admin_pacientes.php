@@ -62,8 +62,13 @@ include_once 'layouts/nav.php';
                         </div>
                         <div class="form-group">
                             <label for="telefono">Teléfono</label>
-                            <input id="telefono" type="text" class="form-control" placeholder="Ingrese teléfono"
+                            <input id="telefono" type="number" class="form-control" placeholder="Ingrese teléfono"
                                 required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ocupacion">Ocupación</label>
+                            <input id="ocupacion" type="text" class="form-control"
+                                placeholder="Ingrese ocupación">
                         </div>
                         <div class="form-group">
                             <label for="contactoemergencia">Contacto de Emergencia</label>
@@ -137,8 +142,13 @@ include_once 'layouts/nav.php';
                         </div>
                         <div class="form-group">
                             <label for="telefono">Teléfono</label>
-                            <input id="editar_telefono_paciente" type="text" class="form-control"
+                            <input id="editar_telefono_paciente" type="number" class="form-control"
                                 placeholder="Ingrese teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="ocupacion">Ocupación</label>
+                            <input id="editar_ocupacion" type="text" class="form-control"
+                                placeholder="Ingrese ocupación">
                         </div>
                         <div class="form-group">
                             <label for="contactoemergencia">Contacto de Emergencia</label>
