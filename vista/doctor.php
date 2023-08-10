@@ -96,6 +96,12 @@ if ($_SESSION['id_rol_usuario']==2){
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-user-friends"></i>
+                                <p>Agenda Terapia Diamagnética</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user-friends"></i>
                                 <p>Historia Clínica</p>
                             </a>
                         </li>
@@ -192,29 +198,7 @@ if ($_SESSION['id_rol_usuario']==2){
                                                     aria-describedby="helpId" placeholder="Hora" disabled>
                                             </div>
 
-                                            <div class="mb-3">
-                                                <label for="descripcion" class="form-label">Tratamiento a seguir</label>
-                                                <select id="ms" multiple="multiple" class="form-control">
-                                                    <option value="1">Brazos</option>
-                                                    <option value="2">Piernas</option>
-                                                    <option value="3">Piscina</option>
-                                                    <option value="4">Compresas Calientes</option>
-                                                </select>
-                                                <!-- <textarea class="form-control" name="descripcion" id="descripcion"
-                                                    rows="3"></textarea> -->
-
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <label for="descripcion" class="form-label">Observaciones del
-                                                    tratamiento</label>
-                                                <textarea class="form-control" name="descripcion" id="descripcion"
-                                                    rows="3"></textarea>
-                                            </div>
-
-
-
-
+                                            
                                             <!-- <div class="mb-3">
                                                 <label for="color" class="form-label">Color:</label>
                                                 <input type="color" class="form-control" name="color" id="color"
@@ -224,12 +208,12 @@ if ($_SESSION['id_rol_usuario']==2){
                                         </form>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <!-- <button type="button" onclick="borrarEvento()" class="btn btn-danger" id="btnBorrar"
-                                        data-bs-dismiss="modal">Borrar</button> -->
+                                <!-- <div class="modal-footer">
+                                    <button type="button" onclick="borrarEvento()" class="btn btn-danger" id="btnBorrar"
+                                        data-bs-dismiss="modal">Borrar</button>
                                     <button type="button" onclick="agregarEvento()" id="btnGuardar"
                                         class="btn btn-primary">Guardar</button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

@@ -88,9 +88,15 @@ if ($_SESSION['id_rol_usuario']==2){
                         data-accordion="false">
                         <li class="nav-header">DOCTOR</li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="consulta.php" class="nav-link">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>Consulta</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user-friends"></i>
+                                <p>Agenda Terapia Diamagnética</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -255,7 +261,7 @@ if ($_SESSION['id_rol_usuario']==2){
 
                                         <div>
                                             <input class="form-check-input" type="checkbox" id="enfreumaticas"
-                                                value="enfreumaticas">
+                                                value="enfermedades reumaticas">
                                             <label class="form-check-label" for="enfreumaticas">Enf. Reumáticas</label>
                                         </div>
                                     </fieldset>
@@ -268,7 +274,184 @@ if ($_SESSION['id_rol_usuario']==2){
                                         </div>
                                     </div>
                                 </div>
-                                
+                                <div class="form-group row">
+                                    <label for="hsalud" class="col-sm-2 col-form-label">Hábitos de Salud:</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="tabaquismo"
+                                            value="tabaquismo">
+                                        <label class="form-check-label" for="tabaquismo">Tabaquismo</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="alcoholismo"
+                                            value="alcoholismo">
+                                        <label class="form-check-label" for="alcoholismo">Alcoholismo</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="drogas" value="drogas">
+                                        <label class="form-check-label" for="drogas">Drogas</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="actfisica"
+                                            value="actividad fisica">
+                                        <label class="form-check-label" for="actfisica">Actividad Física</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="signosvitales" class="col-sm-2 col-form-label">Signos Vitales</label>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="ta" class="col-sm-2 col-form-label">T/A:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" id="ta" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="temperatura" class="col-sm-2 col-form-label">Temperatura:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" id="temperatura" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="fc" class="col-sm-2 col-form-label">FC:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" id="fc" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="fr" class="col-sm-2 col-form-label">FR:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" id="fr" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="escaladolor" class="col-sm-2 col-form-label">Escala de Dolor:</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="sindolor" value="sin dolor">
+                                        <label class="form-check-label" for="sindolor">Sin Dolor</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="pocodolor"
+                                            value="poco dolor">
+                                        <label class="form-check-label" for="pocodolor">Poco Dolor</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="dolormoderado"
+                                            value="dolor moderado">
+                                        <label class="form-check-label" for="dolormoderado">Dolor Moderado</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="dolorfuerte"
+                                            value="dolor fuerte">
+                                        <label class="form-check-label" for="dolorfuerte">Dolor Fuerte</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="dolormuyfuerte"
+                                            value="dolor muy fuerte">
+                                        <label class="form-check-label" for="dolormuyfuerte">Dolor Muy Fuerte</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="imagencuerpo" class="col-sm-2 col-form-label"></label>
+                                    <div class="col-sm-10">
+                                        <img src="../img/Cuerpo.jpg" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="marcha" class="col-sm-2 col-form-label">Marcha / Deambulación:</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="libre" value="libre">
+                                        <label class="form-check-label" for="libre">Libre</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="claudicante"
+                                            value="claudicante">
+                                        <label class="form-check-label" for="claudicante">Claudicante</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="conayuda" value="con ayuda">
+                                        <label class="form-check-label" for="conayuda">Con ayuda</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="espasticas"
+                                            value="espasticas">
+                                        <label class="form-check-label" for="espasticas">Espásticas</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="ataxica" value="ataxica">
+                                        <label class="form-check-label" for="ataxica">Atáxica</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="otras" value="otras">
+                                        <label class="form-check-label" for="otras">Otras</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="fecha" class="col-sm-2 col-form-label">Fecha:</label>
+                                    <div class="col-sm-10">
+                                        <input type="date" id="fecha" class="form-control" disabled>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="diagnostico" class="col-sm-2 col-form-label">Diagnóstico:</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" name="diagnostico" id="diagnostico"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="evaluacion" class="col-sm-2 col-form-label">Evaluación:</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" name="evaluacion" id="evaluacion"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="tratamientoseguir" class="col-sm-4 col-form-label">Tratamiento a
+                                        seguir</label>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="descripcion" class="col-sm-2 col-form-label">Ejercicios:</label>
+                                    <div class="col-sm-10 p-2">
+                                        <select id="ms" multiple="multiple" class="form-control">
+                                            <option value="1">Brazos</option>
+                                            <option value="2">Piernas</option>
+                                            <option value="3">Piscina</option>
+                                            <option value="4">Compresas Calientes</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <label for="descripcion" class="col-sm-2 col-form-label">Terapia:</label>
+                                    <div class="col-sm-10 p-2">
+                                        <select id="ms" multiple="multiple" class="form-control">
+                                            <option value="1">Brazos</option>
+                                            <option value="2">Piernas</option>
+                                            <option value="3">Piscina</option>
+                                            <option value="4">Compresas Calientes</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="observaciones" class="col-sm-2 col-form-label">Observaciones del tratamiento:</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" name="observaciones" id="observaciones"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="offset-sm-1 col-sm-10 float-right">
+                                        <button class="btn btn-block btn-outline-success">Guardar</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
