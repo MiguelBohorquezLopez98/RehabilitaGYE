@@ -23,7 +23,7 @@ session_destroy();
     <img class="wave" src="img/wave.png" alt="">
     <div class="contenedor">
         <div class="img">
-            <img src="img/image1.svg" alt="">
+            <img src="img/Imagen1.jpg" alt="">
         </div>
         <div class="contenido-login">
             <form action="controlador/LoginController.php" method="post">
@@ -51,7 +51,7 @@ session_destroy();
                 <div class="view">
                     <div class="fas fa-eye verPassword" onclick="vista()" id="verPassword"></div>
                 </div>
-                
+
                 <input type="submit" class="btn" value="Iniciar sesión">
             </form>
         </div>
