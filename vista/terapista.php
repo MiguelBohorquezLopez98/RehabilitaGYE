@@ -172,7 +172,7 @@ if ($_SESSION['id_rol_usuario']==3){
                                                     <label for="opcion1">
                                                         <input type="checkbox" name="tratamientos" id="opcion1"
                                                             aria-describedby="helpId" placeholder="" disabled>
-                                                        Brazos
+                                                        Caminadora
                                                         <div class="input-group mb-3">
                                                             <input type="time" class="form-control" name="inicioterapia"
                                                                 id="inicioterapia" aria-describedby="helpId"
@@ -191,7 +191,7 @@ if ($_SESSION['id_rol_usuario']==3){
                                                     <label for="opcion2">
                                                         <input type="checkbox" name="tratamientos" id="opcion2"
                                                             aria-describedby="helpId" placeholder="" disabled>
-                                                        Piernas
+                                                        Bicicleta fija
                                                         <div class="input-group mb-3">
                                                             <input type="time" class="form-control" name="inicioterapia"
                                                                 id="inicioterapia" aria-describedby="helpId"
@@ -204,10 +204,10 @@ if ($_SESSION['id_rol_usuario']==3){
                                                             <button type="button" onclick="" id="btnFin"
                                                                 class="btn btn-danger btn-sm">Finalizar
                                                                 Terapia</button>
+                                                                
                                                         </div>
                                                     </label>
                                                 </label>
-
                                                 <!-- <textarea class="form-control" name="descripcion" id="descripcion"
                                                     rows="3"></textarea> -->
                                             </div>

@@ -419,28 +419,52 @@ if ($_SESSION['id_rol_usuario']==2){
                                 </div>
                                 <div class="form-group row">
                                     <label for="descripcion" class="col-sm-2 col-form-label">Ejercicios:</label>
-                                    <div class="col-sm-10 p-2">
+                                    <div class="col-sm-4 p-2">
                                         <select id="ms" multiple="multiple" class="form-control">
-                                            <option value="1">Brazos</option>
-                                            <option value="2">Piernas</option>
-                                            <option value="3">Piscina</option>
-                                            <option value="4">Compresas Calientes</option>
+                                            <option value="1">Tubos de presion</option>
+                                            <option value="2">Mancuernas</option>
+                                            <option value="3">Bicicleta fija</option>
+                                            <option value="4">Caminadora</option>
                                         </select>
                                     </div>
-                                    
-                                    <label for="descripcion" class="col-sm-2 col-form-label">Terapia:</label>
-                                    <div class="col-sm-10 p-2">
+                                    <div class="col-sm-6 p-2">
+                                        <textarea class="form-control" name="observaciones" id="observaciones" placeholder="Observaciones"
+                                            rows="3"></textarea>
+                                    </div>
+
+
+                                    <label for="descripcion" class="col-sm-2 col-form-label">Terapia Acuatica:</label>
+                                    <div class="col-sm-4 p-2">
                                         <select id="ms" multiple="multiple" class="form-control">
-                                            <option value="1">Brazos</option>
-                                            <option value="2">Piernas</option>
-                                            <option value="3">Piscina</option>
-                                            <option value="4">Compresas Calientes</option>
+                                            <option value="1">Fortalecimiento</option>
+                                            <option value="2">Flotadores piernas</option>
+                                            <option value="3">Flotadores brazos</option>
                                         </select>
+                                    </div>
+                                    <div class="col-sm-6 p-2">
+                                        <textarea class="form-control" name="observaciones" id="observaciones" placeholder="Observaciones"
+                                            rows="3"></textarea>
+                                    </div>
+
+                                    <label for="descripcion" class="col-sm-2 col-form-label">Terapia de camilla:</label>
+                                    <div class="col-sm-4 p-2">
+                                        <select id="ms" multiple="multiple" class="form-control">
+                                            <option value="1">Electrodos</option>
+                                            <option value="2">Ultrasonido</option>
+                                            <option value="3">Compresas frias</option>
+                                            <option value="4">Compresas calientes</option>
+                                            <option value="5">Masaje</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 p-2">
+                                        <textarea class="form-control" name="observaciones" id="observaciones" placeholder="Observaciones"
+                                            rows="3"></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="observaciones" class="col-sm-2 col-form-label">Observaciones del tratamiento:</label>
+                                    <label for="observaciones" class="col-sm-2 col-form-label">Observaciones del
+                                        tratamiento:</label>
                                     <div class="col-sm-10">
                                         <textarea class="form-control" name="observaciones" id="observaciones"
                                             rows="3"></textarea>
