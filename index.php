@@ -20,15 +20,15 @@ session_destroy();
 ?>
 
 <body>
-    <img class="wave" src="img/wave.png" alt="">
+    <img class="wave" src="img/green2.png" alt="">
     <div class="contenedor">
         <div class="img">
-            <img src="img/Imagen1.jpg" alt="">
+            <img src="img/Imagen2.png" alt="">
         </div>
         <div class="contenido-login">
             <form action="controlador/LoginController.php" method="post">
                 <img src="img/doctor.png" alt="">
-                <h2>Centro de Rehabilitación Física "Rehabilita GYE"</h2>
+                <h2>Centro de Rehabilitación Física "Rehabilita"</h2>
                 <div class="input-div dni">
                     <div class="i">
                         <i class="fas fa-user"></i>

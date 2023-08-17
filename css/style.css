@@ -91,7 +91,7 @@ form{
     bottom: -2px;
     width: 0%;
     height: 2px;
-    background-color: blueviolet;
+    background-color: #3bd105;
     transition: .4s;
 }
 .input-div::before{
@@ -104,7 +104,7 @@ form{
     width: 50%;
 }
 .input-div.focus > .i >i{
-    color: blueviolet;
+    color: #3bd105;
 }
 .input-div >div >input{
     position: absolute;
@@ -140,7 +140,7 @@ a:hover{
     border-radius: 25px;
     outline: none;
     border: none;
-    background-image: linear-gradient(to right, #680197, #00ffbf, #c046f8);
+    background-image: linear-gradient(to right, #019710, #00ff5e, #46d30a);
     background-size: 200%;
     font-size: 1.2rem;
     color: #fff;
