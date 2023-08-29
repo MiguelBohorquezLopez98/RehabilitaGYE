@@ -114,12 +114,6 @@ include_once 'layouts/nav.php';
                                             rows="3"></textarea>
                                     </div>
 
-                                    <div class="mb-3">
-                                        <label for="color" class="form-label">Color</label>
-                                        <input type="color" class="form-control" name="color" id="color"
-                                            aria-describedby="helpId" placeholder="Color:">
-                                    </div> -->
-
                                 </form>
                             </div>
                         </div>
